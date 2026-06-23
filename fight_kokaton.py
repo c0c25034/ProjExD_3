@@ -214,6 +214,8 @@ def main():
                     explosions.append(Explosion(bomb, 50))
                     bombs[i] = None
                     bird.change_img(9, screen)
+                    pg.display.update()
+                    time.sleep(1)
                     score.value += 1
                     
         bombs = [bomb for bomb in bombs if bomb is not None]
